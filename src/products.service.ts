@@ -23,7 +23,7 @@ export class ProductsService {
     }
 
     async patch(product: Product): Promise<[number, Product[]]> {
-        return this.productModel.update(livro, {
+        return this.productModel.update(product, {
             where: {
                 id: product.id
             }
